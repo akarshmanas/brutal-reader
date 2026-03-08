@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brutal Reader</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Lora:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      width: 260px;
+      background: #1a1a1a;
+      color: #f5f0e8;
+      font-family: 'JetBrains Mono', monospace;
+      overflow: hidden;
+    }
+
+    .header {
+      padding: 20px 20px 16px;
+      border-bottom: 1px solid rgba(245,240,232,0.08);
+    }
+
+    .logo {
+      font-size: 10px;
+      letter-spacing: 0.25em;
+      font-weight: 700;
+      opacity: 0.5;
+      margin-bottom: 6px;
+    }
+
+    .tagline {
+      font-family: 'Lora', Georgia, serif;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 1.4;
+      color: #f5f0e8;
+      opacity: 0.9;
+    }
+
+    .main {
+      padding: 20px;
+    }
+
+    .toggle-btn {
+      width: 100%;
+      padding: 14px;
+      background: #c8502a;
+      border: none;
+      color: #fff;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      cursor: pointer;
+      border-radius: 2px;
+      transition: all 0.15s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+
+    .toggle-btn:hover { background: #d95f35; }
+
+    .toggle-btn.active {
+      background: rgba(245,240,232,0.1);
+      color: #f5f0e8;
+      border: 1px solid rgba(245,240,232,0.2);
+    }
+
+    .toggle-btn.active:hover {
+      background: rgba(245,240,232,0.15);
+    }
+
+    .icon { font-size: 14px; }
+
+    .hint {
+      margin-top: 16px;
+      font-size: 10px;
+      letter-spacing: 0.08em;
+      opacity: 0.3;
+      text-align: center;
+      line-height: 1.6;
+    }
+
+    .divider {
+      height: 1px;
+      background: rgba(245,240,232,0.06);
+      margin: 16px 0;
+    }
+
+    .features {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .feature {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 10px;
+      letter-spacing: 0.06em;
+      opacity: 0.45;
+    }
+
+    .feature-dot {
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background: #c8502a;
+      flex-shrink: 0;
+      opacity: 0.7;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="logo">BRUTAL READER</div>
+    <div class="tagline">Strip the noise.<br>Read the words.</div>
+  </div>
+
+  <div class="main">
+    <button class="toggle-btn" id="toggleBtn">
+      <span class="icon">📖</span>
+      <span id="btnText">ENTER READING MODE</span>
+    </button>
+
+    <div class="hint">ESC to exit · works on any article</div>
+
+    <div class="divider"></div>
+
+    <div class="features">
+      <div class="feature"><div class="feature-dot"></div>Strips ads, banners & sidebars</div>
+      <div class="feature"><div class="feature-dot"></div>Clean serif typography</div>
+      <div class="feature"><div class="feature-dot"></div>Word count + read time</div>
+      <div class="feature"><div class="feature-dot"></div>Scroll progress indicator</div>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
