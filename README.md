@@ -4,15 +4,12 @@
 
 No ads. No sidebars. No popups. No subscribe banners. Just the article, on warm paper.
 
-![Brutal Reader Demo](demo.gif)
-
----
 
 ## Install
 
 ### Chrome / Edge (manual sideload — free)
 
-1. Download the latest release → **[brutal-reader.zip](https://github.com/YOUR_USERNAME/brutal-reader/releases/latest)**
+1. Download the latest release → **[brutal-reader.zip](https://github.com/akarshmanas/brutal-reader/releases/latest)**
 2. Unzip it
 3. Go to `chrome://extensions`
 4. Enable **Developer Mode** (toggle, top right)
@@ -50,9 +47,7 @@ Web pages are built to extract attention, not deliver it. Brutal Reader flips th
 
 No build step. Pure HTML/CSS/JS.
 
-```
-git clone https://github.com/YOUR_USERNAME/brutal-reader
-```
+
 
 Load the folder via Chrome's **Load unpacked** or Firefox's **about:debugging**.
 
